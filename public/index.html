@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redis Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>💬 Redis Chat App</h2>
+
+    <div id="onlineUsers"></div>
+
+    <div id="chatBox"></div>
+
+    <input id="username" placeholder="Enter username" />
+    <button onclick="joinChat()">Join</button>
+
+    <br><br>
+
+    <input id="message" placeholder="Type message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <p id="typing"></p>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+
+</body>
+</html>
